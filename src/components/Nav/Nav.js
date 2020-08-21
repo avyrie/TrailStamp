@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 const Nav = () => {
     return (
         <nav>
             <div className="nav-links">
-                {/* <Link to="">Home</Link>
-                <Link to="">Profile</Link>
-                <Link to="">Add New Hike</Link> */}
-                <Link to="">Sign Up</Link>
-                <Link to="">Login</Link>
-                {/* <Link to="">Logout</Link> */}
+                {/* <NavLink className='nav-link' exact to='/'>Home</NavLink>
+                <NavLink className='nav-link' exact to='/'>Profile</NavLink>
+                <NavLink className='nav-link' exact to='/'>Add New Hike</NavLink> */}
+                <NavLink className='nav-link' exact to='/signup'>Sign Up</NavLink>
+                <NavLink className='nav-link' exact to='/login'>Login</NavLink>
+                {/* <NavLink className='nav-link' exact to='/'>Logout</NavLink> */}
             </div>
         </nav>
     )

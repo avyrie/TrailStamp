@@ -12,6 +12,7 @@ header {
 .banner-text {
     margin: auto;
     z-index: 5;
+    text-align: center;
 }
 .banner-text h1 {
     color: #fff;
@@ -37,9 +38,7 @@ header {
 
 .about {
     margin: 4% 3%;
-}
-.about h4 {
-    font-family: 'Josefin Slab', serif;
+    text-align: center;
 }
 
 /* Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
