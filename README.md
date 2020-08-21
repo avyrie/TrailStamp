@@ -1,5 +1,6 @@
-### Trail Stamp
+# Trail Stamp
 
+## User Story
 This app allows users to rate hikes they’ve been on and check them off their “hike” list. 
 
 If a user is not logged in, they will see the site’s landing page which contains some information about the site. 
@@ -16,22 +17,22 @@ Initial hikes list will be provided from seed data and hikes will be added to th
 
 ## Wireframes
 
-# ERD
+### ERD
 <img src="./final-images/erd.png">
 
-# Home Page
+### Home Page
 <img src="./final-images/home.png">
 
-# Profile Page
+### Profile Page
 <img src="./final-images/profile.png">
 
-# Hike Show Page
+### Hike Show Page
 <img src="./final-images/hike.png">
 
-# Add HikePage
+### Add HikePage
 <img src="./final-images/newhike.png">
 
-# Sign Up Page
+### Sign Up Page
 <img src="./final-images/signup.png">
 
 
