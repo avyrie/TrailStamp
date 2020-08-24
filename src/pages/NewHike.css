@@ -1,0 +1,33 @@
+.new-ev {
+    background: url('../components/images/solohike.jpg') top center no-repeat;
+    background-size: cover;
+}
+.new-wrapper {
+    width: 80vw;
+    max-width: 550px;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgrey;
+    margin: 13% auto 7% auto;
+    background: #fff;
+}
+
+.name-new {
+    margin-left: 32px;
+}
+.city-new {
+    margin-left: 52px;
+}
+.state-new {
+    margin-left: 40px;
+}
+.image-new {
+    margin-left: 30px;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+

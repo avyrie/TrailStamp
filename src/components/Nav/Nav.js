@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import LeafStamp from "../images/leafstampc.png";
 import './Nav.css';
 
 const Nav = () => {
     return (
         <nav>
+            <NavLink  class="site-icon" to="/">
+                <img className="stamp" src={LeafStamp} alt="leaf print" />
+            </NavLink>
             <div className="nav-links">
                 {/* <NavLink className='nav-link' exact to='/'>Home</NavLink>
                 <NavLink className='nav-link' exact to='/'>Profile</NavLink>
@@ -12,6 +16,8 @@ const Nav = () => {
                 <NavLink className='nav-link' exact to='/signup'>Sign Up</NavLink>
                 <NavLink className='nav-link' exact to='/login'>Login</NavLink>
                 {/* <NavLink className='nav-link' exact to='/'>Logout</NavLink> */}
+                <NavLink className='nav-link' exact to='/hikes'>Hikes</NavLink>
+                <NavLink className='nav-link' exact to='/hikes/new'>Add Hike</NavLink>
             </div>
         </nav>
     )

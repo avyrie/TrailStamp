@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
-import LeafStamp from "../images/leafstampc.png";
+// import { Link } from 'react-router-dom';
 
 function Home() {
     return(
@@ -13,9 +12,7 @@ function Home() {
                     <h3>“Your focus determines your reality”</h3>
                     {/* – Qui-Gon Jinn */}
                 </div>
-                {/* <Link to="/"> */}
-                    <img className="stamp" src={LeafStamp} alt="leaf print" />
-                {/* </Link> */}
+           
             </header>
 
             <div className="about">

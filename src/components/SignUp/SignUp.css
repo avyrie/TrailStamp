@@ -1,0 +1,40 @@
+.signup-div {
+    background: url('../images/mountainhike.jpg') top center no-repeat;
+    width: 100vw;
+    max-height: 150vh;
+    align-items: center;
+    flex: 1 0 auto;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    height: 70vh;
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    border: 2px solid lightgrey;
+    background: #fff;
+    margin-top: 40px;
+}
+
+.passwords {
+    padding-right: 58px;
+}
+.emails {
+    padding-right: 104px;
+}
+.names {
+    padding-right: 98px;
+}
+.username {
+    padding-right: 50px;
+}
+
+.sub {
+    margin-bottom: 15px;
+}
+

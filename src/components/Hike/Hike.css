@@ -1,0 +1,59 @@
+.hike-wrapper {
+    width: 30vw;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.hike-image {
+    width: 30vw;
+    padding-bottom: 30px;
+}
+.hike-name {
+    padding-bottom: 15px;;
+}
+
+
+
+
+/* .game-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    margin-bottom: 30px;
+    color: white;
+    transition: 0.1s linear;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper {
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .image-wrapper img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .content-wrapper {
+    padding: 0 20px;
+    text-align: center;
+  }
+   */

@@ -1,0 +1,19 @@
+.hikes-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+    text-align: center;
+  }
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hikes-container h2 {
+      margin: 0 auto;
+      text-align: center;
+  }
+  

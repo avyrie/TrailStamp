@@ -42,10 +42,34 @@ Initial hikes list will be provided from seed data and hikes will be added to th
 - JavaScript
 - React.js
 
+## Attributions and Acknowledgements
 
+Special thanks to Zach Milan
 
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+plant, tree, sun, lizard, fox, fish, flower
 
+Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+leaf
 
+Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+beaver, snake
+
+<img src={record.picture} onError={(e)=>{e.target.onerror = null; e.target.src="image_path_here"}}/>
+
+https://www.uokpl.rs/fpng/f/9-97476_transparent-background-white.png 
+stamp circle
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRz0bxMkl2_ggkVpKeI3VhQtYwwt0hjzTI8Eg&usqp=CAU
+leaf stamp
+
+https://unsplash.com/photos/DmVDrTLFHBw
+
+https://unsplash.com/photos/LEgwEaBVGMo
+
+https://unsplash.com/photos/Yizrl9N_eDA
+
+https://unsplash.com/photos/UVyOfX3v0Ls
 
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
