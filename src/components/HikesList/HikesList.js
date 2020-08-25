@@ -3,17 +3,18 @@ import Hike from '../Hike/Hike';
 import './HikesList.css';
 
 function HikesList(props) {
-  const hikesList = props.hikes.map((hikeObj) => {
-    return(
-        <Hike 
-        key={hikeObj._id} 
-        hike={hikeObj} 
-        list={true}
-        deleteHike={props.deleteHike}
-        updateHike={props.updateHike} 
-        />
-    ) 
-  });
+    console.log(`This is the props in HikeList: `, props)
+    const hikesList = props.hikes.map((hikeObj) => {
+        return(
+            <Hike 
+            key={hikeObj._id} 
+            hike={hikeObj} 
+            deleteHike={props.deleteHike}
+            list={true}
+            updateHike={props.updateHike} 
+            />
+        ) 
+    });
 
   return (
     <div className="hikes-container">

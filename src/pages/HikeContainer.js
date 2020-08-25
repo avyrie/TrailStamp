@@ -1,6 +1,7 @@
 import React from 'react';
 import Hike from '../components/Hike/Hike';
 import HikeModel from '../models/hike';
+import { Redirect } from 'react-router-dom';
 
 class HikeContainer extends React.Component {
   state = {
@@ -8,7 +9,7 @@ class HikeContainer extends React.Component {
   };
 
   componentDidMount() {
-    // Get All Games
+    // Get All Hikes
     HikeModel.getHikeById(this.props.match.params.id)
       .then((result) => {
         console.log(result);
@@ -17,10 +18,17 @@ class HikeContainer extends React.Component {
       .catch((err) => console.log(err))
   }
 
+    deleteHike = (hike) => {
+        HikeModel.delete(hike).then((res) => {
+            this.props.history.push('/hikes')
+            this.setState({hike});
+        });
+    };
+
   render() {
     console.log(this.props);
     return (
-        <Hike hike={this.state.hike} list={false} />
+        <Hike hike={this.state.hike} list={false} deleteHike={this.deleteHike} />
         )
     }
 }

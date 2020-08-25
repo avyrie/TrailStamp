@@ -1,4 +1,4 @@
-// import axios from 'axios';
+import axios from 'axios';
 const url = `http://localhost:4000/api/hikes`
 const token = localStorage.getItem('token')
 
@@ -26,9 +26,16 @@ class HikeModel {
   }
 
 //   static delete = (hike) => {
-//     let request = axios.delete(`${url}/${hikeId}`);
-//     return request;
-//   };
+//     console.log(`This is a hike from the hike model: `, hike);
+//     let newData = this.state.data.filter( searchItem => searchItem !== hike )
+//     this.setState({
+//         data: newData
+//     })
+// }
+  static delete = (hike) => {
+    let request = axios.delete(`${url}/${hike}`);
+    return request;
+  };
 //   static update = (hike) => {
 //     let request = axios.put(`${url}/${hikeId}`, hike);
 //     return request;
