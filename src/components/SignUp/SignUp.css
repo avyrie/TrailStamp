@@ -8,17 +8,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 63px;
 }
 
 .signup-form {
     height: 70vh;
     min-height: 520px;
+    max-height: 550px;
     display: flex;
     justify-content: center;
     width: 450px;
     border: 2px solid lightgrey;
     background: #fff;
-    margin-top: 40px;
 }
 
 .passwords {

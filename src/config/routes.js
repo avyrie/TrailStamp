@@ -7,6 +7,7 @@ import Login from '../components/Login/Login';
 import HikesListContainer from '../pages/HikesListContainer';
 import HikeContainer from '../pages/HikeContainer';
 import NewHikeContainer from '../pages/NewHikeContainer';
+import EditHikeForm from '../components/EditHikeForm/EditHikeForm';
 
 export default () => (
     <Switch>
@@ -18,6 +19,7 @@ export default () => (
         <Route path='/hikes/new' render={() => 
             <NewHikeContainer />} 
             />
+        <Route path='/hikes/:id/edit' component={EditHikeForm} />
         <Route path='/hikes/:id' component={HikeContainer} />
         
 

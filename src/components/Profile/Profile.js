@@ -3,7 +3,7 @@ import React from 'react';
 import './Profile.css';
 import DefaultHike from '../images/forest.png';
 
-function Hike (props) {
+function Profile (props) {
   console.log(props)
   const { profile } = props;
 
@@ -25,4 +25,4 @@ function Hike (props) {
   );
 }
 
-export default Hike;
+export default Profile;

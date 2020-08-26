@@ -1,29 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Hike.css';
+import EditHikeForm from '../EditHikeForm/EditHikeForm';
 import DefaultHike from '../images/forest.png';
+import './Hike.css';
 
 class Hike extends Component {
   state = {
     showReviews: false,
     hike: {}
   };
-  
-
-  // toggle = () => {
-  //   if ({hike.completed} === 'Yes') {
-  //     this.setState({showReviews: !this.state.showReviews})
-  //   }
-  // };
 
   deleteClickedHike = () => {
     console.log(`This is hike props from Hike.js: `, this.props)
+    console.log(`This is hike state from Hike.js: `, this.state)
+
     this.props.deleteHike(this.props.hike._id)
   };
 
+  // editClickedHike = () => {
+  //   console.log(`This is this.props in Hike.js: `, this.props)
+  //   this.props.editHike(this.props.hike)
+  // }
+
   render() {
-    console.log(this.props)
+    console.log(`Rendered props from Hike.js: `, this.props)
     const { hike, list } = this.props;
+    let hidden = hike.completed ? '' : 'hidden'
+    
 
     return (
       <div className="hike-wrapper">
@@ -41,16 +44,14 @@ class Hike extends Component {
               <p><strong>Location: </strong> {hike.city}, {hike.state}</p>
               <p><strong>Difficulty: </strong> {hike.difficulty}</p>
   
-              <p>Completed: {hike.completed ? 'Yes' : 'No'}</p>
+              <p><strong>Completed:</strong> {hike.completed ? 'Yes' : 'No'}</p>
 
-              {this.state.showReviews && (
-                <section>
-                  <p><strong>Rating: </strong> {hike.rating}</p>
-                  <p><strong>Review: </strong> {hike.review}</p>
-                </section>
-              )}
+            <section className={ hidden }>
+              <p><strong>Rating: </strong> {hike.rating}</p>
+              <p><strong>Review: </strong> {hike.review}</p>
+            </section>
 
-              <button type="">Edit</button>
+              <Link to={`/hikes/${hike._id}/edit`}><button>Edit</button></Link>
               <button onClick={this.deleteClickedHike}>Delete</button>
             </>
           )}
@@ -59,11 +60,5 @@ class Hike extends Component {
     );
   }
 }
-// function Hike (props) {
-//   console.log(props)
-//   const { hike, list } = props;
-
-  
-// }
 
 export default Hike;

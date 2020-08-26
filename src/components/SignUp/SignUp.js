@@ -38,7 +38,7 @@ class SignUp extends Component {
                     <h2>Sign Up</h2>
                     <div className="form-group">
                         <label className="images" htmlFor="image">Profile Image: </label>
-                        <input onChange={this.handleChange} type="string" id="image" name="image" value={this.state.password} />
+                        <input onChange={this.handleChange} type="string" id="image" name="image" value={this.state.image} />
                     </div>
                     <div className="form-group">
                         <label className="username" htmlFor="username">Username: </label>

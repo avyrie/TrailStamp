@@ -6,7 +6,7 @@ import './Nav.css';
 const Nav = () => {
     return (
         <nav>
-            <NavLink  class="site-icon" to="/">
+            <NavLink  className="site-icon" to="/">
                 <img className="stamp" src={LeafStamp} alt="leaf print" />
             </NavLink>
             <div className="nav-links">

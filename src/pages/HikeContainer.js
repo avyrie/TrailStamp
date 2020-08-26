@@ -1,7 +1,8 @@
 import React from 'react';
 import Hike from '../components/Hike/Hike';
 import HikeModel from '../models/hike';
-import { Redirect } from 'react-router-dom';
+const url = `http://localhost:4000/api/hikes`
+const token = localStorage.getItem('token')
 
 class HikeContainer extends React.Component {
   state = {
@@ -9,15 +10,15 @@ class HikeContainer extends React.Component {
   };
 
   componentDidMount() {
-    // Get All Hikes
     HikeModel.getHikeById(this.props.match.params.id)
-      .then((result) => {
-        console.log(result);
-        this.setState({hike: result});
-      })
-      .catch((err) => console.log(err))
+    .then((result) => {
+      console.log(`This is the result of getHikeById in hike container: `, result, ` And this is the this.props: `, this.props);
+      this.setState({hike: result});
+    })
+    .catch((err) => console.log(err))
   }
 
+  // Delete Hike
     deleteHike = (hike) => {
         HikeModel.delete(hike).then((res) => {
             this.props.history.push('/hikes')
@@ -28,7 +29,7 @@ class HikeContainer extends React.Component {
   render() {
     console.log(this.props);
     return (
-        <Hike hike={this.state.hike} list={false} deleteHike={this.deleteHike} />
+        <Hike hike={this.state.hike} list={false} deleteHike={this.deleteHike} edit={this.edit}/>
         )
     }
 }

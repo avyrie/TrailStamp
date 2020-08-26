@@ -16,3 +16,7 @@
 .hike-name {
     padding-bottom: 15px;;
 }
+
+.hidden {
+    display: none;
+}

@@ -14,6 +14,7 @@ class HikeModel {
   }
 
   static createHike = (hike) => {
+    console.log(`This is a hike from the model: `, hike)
     return fetch(url, {
       method: 'POST',
       headers: {
@@ -25,23 +26,23 @@ class HikeModel {
       .then((response) => response.json())
   }
 
-//   static delete = (hike) => {
-//     console.log(`This is a hike from the hike model: `, hike);
-//     let newData = this.state.data.filter( searchItem => searchItem !== hike )
-//     this.setState({
-//         data: newData
-//     })
-// }
   static delete = (hike) => {
     let request = axios.delete(`${url}/${hike}`);
     return request;
   };
-//   static update = (hike) => {
-//     let request = axios.put(`${url}/${hikeId}`, hike);
-//     return request;
-//   };
+
+static edit = (hike) => {
+    console.log(`This is a hike from the model in edit: `, hike)
+    return fetch(`${url}/${hike._id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'authorization': token,
+      },
+      body: JSON.stringify(hike)
+    })
+      .then((response) => response.json())
+  }
 }
-
-
 
 export default HikeModel;
