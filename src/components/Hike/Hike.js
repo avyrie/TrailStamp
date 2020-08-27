@@ -24,7 +24,6 @@ class Hike extends Component {
     const { hike, list } = this.props;
     let hidden = hike.completed ? '' : 'hidden'
     
-
     return (
       <div className="hike-wrapper">
         <Link to={`/hikes/${hike._id}`}>

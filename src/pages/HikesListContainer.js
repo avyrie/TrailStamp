@@ -28,7 +28,7 @@ class HikesListContainer extends React.Component {
 // };
 
   render() {
-    return <HikesList hikes={this.state.hikes} deleteHike={this.deleteHike} />;
+    return <HikesList hikes={this.state.hikes} deleteHike={this.deleteHike} currentUser={this.props.currentUser}/>;
   };
 }
 
