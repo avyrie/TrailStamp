@@ -1,8 +1,8 @@
 import React from 'react';
 import Hike from '../components/Hike/Hike';
 import HikeModel from '../models/hike';
-const url = `http://localhost:4000/api/hikes`
-const token = localStorage.getItem('token')
+// const url = `http://localhost:4000/api/hikes`
+// const token = localStorage.getItem('token')
 
 class HikeContainer extends React.Component {
   state = {

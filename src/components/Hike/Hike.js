@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import EditHikeForm from '../EditHikeForm/EditHikeForm';
 import DefaultHike from '../images/forest.png';
 import './Hike.css';
 
@@ -17,10 +16,6 @@ class Hike extends Component {
     this.props.deleteHike(this.props.hike._id)
   };
 
-  // editClickedHike = () => {
-  //   console.log(`This is this.props in Hike.js: `, this.props)
-  //   this.props.editHike(this.props.hike)
-  // }
 
   render() {
     console.log(`Rendered props from Hike.js: `, this.props)

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import './Login.css';
@@ -18,7 +17,7 @@ class Login extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    axios.post(`${process.env}/auth/login`, this.state)
+    axios.post(`${process.env.REACT_APP_API}/auth/login`, this.state)
       .then((res) => {
         console.log(res);
         localStorage.setItem('token', res.data.token)
@@ -26,12 +25,11 @@ class Login extends Component {
         this.props.history.push('/hikes');
       })
       .catch((err) => {
-        console.log(err.response.status);
-        console.log(err.response.data);
-        console.log(err.response.data.message);
+        console.log(err);
+        console.log(err);
+        console.log(err);
       });
   }
-
 
   render() {
     console.log(this.props);
@@ -41,12 +39,12 @@ class Login extends Component {
             <form onSubmit={this.handleSubmit}>
               <h2>Login</h2>
               <div className="form-group">
-                <label className="email" htmlFor="name">Email: </label>
-                <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} />
+                <label className="email" htmlFor="name">E-mail: </label>
+                <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} placeholder="Enter your e-mail"/>
               </div>
               <div className="form-group">
                 <label className="password" htmlFor="password">Password: </label>
-                <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} />
+                <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} placeholder="Enter your password"/>
               </div>
               <button className="btn btn-primary" type="submit">Login</button>
             </form>

@@ -73,13 +73,25 @@ class EditHikeForm extends React.Component {
                             <label htmlFor="">State:</label>
                             <input className="state-new" defaultValue={state} onChange={this.onChange} type="text" name="state" />
                         </div>
+
                         <div className="field">
                             <label htmlFor="">Difficulty:</label>
-                            <input className="difficulty-new" defaultValue={difficulty} onChange={this.onChange} type="text" name="difficulty" />
+
+                            {/* <input className="difficulty-new difficulty-edit" defaultValue={difficulty} onChange={this.onChange} type="text" name="difficulty" />
+                            <div className="field"> */}
+                            
+                            <select className="difficulty-new difficulty-edit" name="difficulty" defaultValue={difficulty} onChange={this.onChange}>
+                                <option value=''>{difficulty}</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
                         </div>
+                      
+
                         <div className="field">
                             <label htmlFor="">Image:</label>
-                            <input className="image-new" defaultValue={image} onChange={this.onChange} type="text" name="image" />
+                            <input className="image-new image-edit" defaultValue={image} onChange={this.onChange} type="text" name="image" />
                         </div>
 
 

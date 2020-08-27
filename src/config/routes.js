@@ -9,12 +9,16 @@ import HikeContainer from '../pages/HikeContainer';
 import NewHikeContainer from '../pages/NewHikeContainer';
 import EditHikeForm from '../components/EditHikeForm/EditHikeForm';
 
-export default () => (
+export default ({ currentUser, setCurrentUser }) => (
     <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/profile' component={Profile}/>
         <Route path='/signup' component={SignUp}/>
-        <Route path='/login' component={Login}/>
+        {/* <Route path='/login' component={Login}/> */}
+        <Route path='/login' render={() =>
+            <Login setCurrentUser={setCurrentUser}/>}
+            />
+
         <Route exact path='/hikes' component={HikesListContainer}/>
         <Route path='/hikes/new' render={() => 
             <NewHikeContainer />} 

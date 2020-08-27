@@ -24,7 +24,11 @@
     margin-left: 65px;
 }
 .image-new {
-    margin-left: 55px;
+    margin-left: 55px !important;
+    height: 15px;
+}
+.image-edit {
+    margin-left: 55px !important;
 }
 .rating-new {
     margin-left: 49px;
@@ -37,6 +41,10 @@
     width: 190px;
     height: 24px;
     color: rgb(105, 105, 105);
+}
+.difficulty-edit {
+    height: 26px;
+    color: black;
 }
 
 .field {

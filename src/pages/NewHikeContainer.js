@@ -1,9 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import Dropdown from 'react-dropdown';
 import HikeModel from '../models/hike';
-import Avatar1 from '../components/images/animal.png'
-import Avatar2 from '../components/images/clownfish.png'
 
 import 'react-dropdown/style.css';
 import './NewHike.css'
@@ -46,10 +43,6 @@ class NewHikeContainer extends React.Component {
 
   
   render() {
-      const options = [
-        {Avatar1}, {Avatar2}
-      ]
-      const defaultOption = options[0]
       
     return (
         <div className="new-ev">

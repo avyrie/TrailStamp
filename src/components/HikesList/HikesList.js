@@ -18,7 +18,6 @@ function HikesList(props) {
 
   return (
     <div className="hikes-container">
-        <h2>List of Hikes</h2>
         <div className="list-container">
             {hikesList}
         </div>
