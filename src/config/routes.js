@@ -8,23 +8,28 @@ import HikesListContainer from '../pages/HikesListContainer';
 import HikeContainer from '../pages/HikeContainer';
 import NewHikeContainer from '../pages/NewHikeContainer';
 import EditHikeForm from '../components/EditHikeForm/EditHikeForm';
+import UserContainer from '../pages/UserContainer';
 
-export default ({ currentUser, setCurrentUser }) => (
+export default ({ currentUser, setCurrentUser, logout }) => (
     <Switch>
         <Route exact path='/' component={Home}/>
-        <Route path='/profile' component={Profile}/>
+        <Route path='/users/:id' render={() => 
+            <UserContainer setCurrentUser={setCurrentUser} currentUser={currentUser} logout={logout}/>}/>
+            
         <Route path='/signup' component={SignUp}/>
-        {/* <Route path='/login' component={Login}/> */}
         <Route path='/login' render={() =>
             <Login setCurrentUser={setCurrentUser}/>}
             />
 
         <Route exact path='/hikes' component={HikesListContainer}/>
         <Route path='/hikes/new' render={() => 
-            <NewHikeContainer />} 
+            <NewHikeContainer currentUser={currentUser}/>} 
             />
         <Route path='/hikes/:id/edit' component={EditHikeForm} />
         <Route path='/hikes/:id' component={HikeContainer} />
+        {/* <Route path='/hikes/:id' render={() => 
+            <HikeContainer currentUser={currentUser}/>} 
+            /> */}
         
 
     </Switch>

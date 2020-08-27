@@ -19,6 +19,8 @@ class Hike extends Component {
 
   render() {
     console.log(`Rendered props from Hike.js: `, this.props)
+    console.log(`Rendered state from Hike.js: `, this.state)
+
     const { hike, list } = this.props;
     let hidden = hike.completed ? '' : 'hidden'
     
@@ -40,6 +42,7 @@ class Hike extends Component {
               <p><strong>Difficulty: </strong> {hike.difficulty}</p>
   
               <p><strong>Completed:</strong> {hike.completed ? 'Yes' : 'No'}</p>
+              <p><strong>Author:</strong> {hike.author}</p>
 
             <section className={ hidden }>
               <p><strong>Rating: </strong> {hike.rating}</p>

@@ -35,7 +35,7 @@ class App extends Component {
     const decodedToken = jwt_decode(token);
     // Set State
     this.setState({
-      currentUser: decodedToken.id
+      currentUser: decodedToken
     })
   };
 

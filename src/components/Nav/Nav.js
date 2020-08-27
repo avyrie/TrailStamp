@@ -4,6 +4,7 @@ import LeafStamp from "../images/leafstampc.png";
 import './Nav.css';
 
 const Nav = ({ currentUser, logout }) => {
+    console.log(`THIS IS CURRENT USER FROM NAV: `, currentUser)
     return (
         <nav>
             <NavLink className="site-icon" exact to="/">
@@ -15,6 +16,8 @@ const Nav = ({ currentUser, logout }) => {
                     <React.Fragment>
                         <NavLink onClick={logout} className='nav-link' exact to='/'>Logout</NavLink> 
                         <NavLink className='nav-link' exact to='/hikes/new'>Add Hike</NavLink>   
+
+                        <NavLink className='nav-link' to={`/users/${currentUser.id}`}>Profile</NavLink>
                     </React.Fragment>
                 )}
                 {!currentUser && (

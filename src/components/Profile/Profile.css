@@ -1,0 +1,23 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.prof-wrapper {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prof-image {
+    width: 20vw;
+}

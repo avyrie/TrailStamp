@@ -21,12 +21,12 @@ class Login extends Component {
       .then((res) => {
         console.log(res);
         localStorage.setItem('token', res.data.token)
+        localStorage.setItem('id', res.data.id)
+
         this.props.setCurrentUser(res.data.token);
         this.props.history.push('/hikes');
       })
       .catch((err) => {
-        console.log(err);
-        console.log(err);
         console.log(err);
       });
   }

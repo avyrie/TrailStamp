@@ -27,7 +27,7 @@ class HikeContainer extends React.Component {
     };
 
   render() {
-    console.log(this.props);
+    console.log(`This is this.props from HC: `, this.props);
     return (
         <Hike hike={this.state.hike} list={false} deleteHike={this.deleteHike} edit={this.edit}/>
         )

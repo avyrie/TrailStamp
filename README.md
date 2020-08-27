@@ -41,27 +41,33 @@ Initial hikes list will be provided from seed data and hikes will be added to th
 - CSS3
 - JavaScript
 - React.js
+- Node.js
+- Express
+- MongoBD
+- Mongoose
 
 ## Attributions and Acknowledgements
 
-Special thanks to Zach Milan
+### Special thanks to Adonis Martin, Kenny Bushman, Michael Petty, Yulia Tsernant, and Zach Milan.
+
+### Images:
 
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-plant, tree, sun, lizard, fox, fish, flower
+Plant, Tree, Sun, Lizard, Fox, Fish, Flower
 
 Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-leaf
+Leaf
 
 Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-beaver, snake
+Beaver, Snake
 
 <img src={record.picture} onError={(e)=>{e.target.onerror = null; e.target.src="image_path_here"}}/>
 
 https://www.uokpl.rs/fpng/f/9-97476_transparent-background-white.png 
-stamp circle
+Stamp Circle
 
 https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRz0bxMkl2_ggkVpKeI3VhQtYwwt0hjzTI8Eg&usqp=CAU
-leaf stamp
+Leaf Stamp
 
 https://unsplash.com/photos/DmVDrTLFHBw
 

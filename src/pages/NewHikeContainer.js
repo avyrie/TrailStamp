@@ -15,19 +15,25 @@ class NewHikeContainer extends React.Component {
     completed: false,
     rating: '',
     review: '',
+    author: this.props.currentUser,
   };
+  
 
   handleChange = (event) => {
     console.log(`This is the event target id: `, event.target.id);
+    console.log(`This is the this.props.currentUser: `, this.props.currentUser);
+    this.setState({author: this.props.currentUser})
+    
     if (event.target.value === 'on') {
         event.target.value = true;
     }
     this.setState({[event.target.name]: event.target.value})
+    // this.setState({author: this.props.currentUser})
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(this.state)
+    console.log(`This is handleSubmit this.state: `, this.state)
     HikeModel.createHike(this.state)
       .then((result) => {
         console.log(`This is the result from the new: `, result);
@@ -43,7 +49,9 @@ class NewHikeContainer extends React.Component {
 
   
   render() {
-      
+    console.log(`This.props.currentuser: `, this.props.currentUser)
+    console.log(`This.state: `, this.state)
+
     return (
         <div className="new-ev">
             <div className="new-wrapper">
@@ -64,7 +72,7 @@ class NewHikeContainer extends React.Component {
                         </div>
                         <div className="field">
                             <label htmlFor="">Difficulty:</label>
-                            {/* <input className="difficulty-new" onInput={this.handleChange} type="text" name="difficulty" placeholder="Select a difficulty level" required/> */}
+                            
                             <select className="difficulty-new" name="difficulty" onChange={this.handleChange}>
                                 <option value=''>Select a difficulty level</option>
                                 <option value="Beginner">Beginner</option>
@@ -76,11 +84,6 @@ class NewHikeContainer extends React.Component {
                         <div className="field">
                             <label htmlFor="">Image:</label>
                             <input className="image-new" onInput={this.handleChange} type="text" name="image" placeholder="Enter an image URL"/>
-                            {/* <select className="image-new" name="image" onChange={this.handleChange}>
-                                <option value=''>Select an image</option>
-                                <option value={Avatar1}>Avatar 1</option>
-                                <option value={Avatar2}>Avatar 2</option>
-                            </select> */}
                         </div>
 
 
