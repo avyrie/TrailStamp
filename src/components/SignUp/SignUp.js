@@ -72,19 +72,19 @@ class SignUp extends Component {
                     
                     <div className="form-group">
                         <label className="username" htmlFor="username">Username: </label>
-                        <input onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} placeholder="Enter a username"/>
+                        <input onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} placeholder="Enter a username" required/>
                     </div>
                     <div className="form-group">
                         <label className="emails" htmlFor="name">Email: </label>
-                        <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} placeholder="Enter your e-mail address"/>
+                        <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} placeholder="Enter your e-mail address" required/>
                     </div>
                     <div className="form-group">
                         <label className="passwords" htmlFor="password">Password: </label>
-                        <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} placeholder="Enter a password"/>
+                        <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} placeholder="Enter a password" required/>
                     </div>
                     <div className="form-group">
                         <label className="names" htmlFor="name">Name: </label>
-                        <input onChange={this.handleChange} type="text" id="name" name="name" value={this.state.name} placeholder="Enter your name"/>
+                        <input onChange={this.handleChange} type="text" id="name" name="name" value={this.state.name} placeholder="Enter your name" required/>
                     </div>
                     <button type="submit">Submit</button>
                 </form>

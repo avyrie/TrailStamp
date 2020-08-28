@@ -40,11 +40,11 @@ class Login extends Component {
               <h2>Login</h2>
               <div className="form-group">
                 <label className="email" htmlFor="name">E-mail: </label>
-                <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} placeholder="Enter your e-mail"/>
+                <input onChange={this.handleChange} type="email" id="email" name="email" value={this.state.email} placeholder="Enter your e-mail" required/>
               </div>
               <div className="form-group">
                 <label className="password" htmlFor="password">Password: </label>
-                <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} placeholder="Enter your password"/>
+                <input onChange={this.handleChange} type="password" id="password" name="password" value={this.state.password} placeholder="Enter your password" required/>
               </div>
               <button className="btn btn-primary" type="submit">Login</button>
             </form>
