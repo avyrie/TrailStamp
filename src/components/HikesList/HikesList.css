@@ -1,20 +1,60 @@
+.profile-container {
+  width: 100vw;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .hikes-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px;
+    margin: 0 2%;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid rgb(60, 147, 158);
+    padding: 20px 50px 60px 50px;
+    background-image: url('https://images.unsplash.com/photo-1578403881967-084f9885be74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1014&q=80');
+    background-size: cover;
+  }
+  .hike-border {
+    background: rgb(252, 251, 250, 0.8);
+    border: 2px solid rgb(60, 147, 158);
+    min-height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6% 2%;
+    background: contain;
+    overflow: hidden;
   }
   .list-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    margin: 2% 2%;
   }
-
   .hikes-container h2 {
       margin: 0 auto;
       text-align: center;
+      padding-bottom: 20px;
+  }
+  .profile-wrap {
+    border: 2px solid rgb(60, 147, 158);
+    margin: 50px;
+    padding: 0px 20px 50px;
+    background: rgb(132, 236, 188);
+  }
+.mountains {
+    margin-bottom: 0;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(13, 65, 71);
+  }
+  .ts {
+    font-family: 'Barlow', sans-serif;
+    color: rgb(25, 108, 119);
   }
   

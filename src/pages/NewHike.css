@@ -9,7 +9,7 @@
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
-    border: 2px solid lightgrey;
+    border: 2px solid rgb(71, 152, 163);
     margin: 13% auto 7% auto;
     background: #fff;
 }
@@ -57,4 +57,25 @@ input {
 .completed-new {
     width: 15px;
 }
+.new-name {
+    color: rgb(25, 108, 119);
+}
+.new-button {
+    width: 130px;
+    background: rgb(60, 147, 158);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 46%;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;;
+}
+
+.new-button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: rgb(60, 147, 158);
+    border: 2px solid rgb(60, 147, 158);
+}
+
 

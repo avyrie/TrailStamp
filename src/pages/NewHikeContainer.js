@@ -57,21 +57,21 @@ class NewHikeContainer extends React.Component {
             <div className="new-wrapper">
                 <div className="new-hike">
                     <form onSubmit={this.handleSubmit}>
-                        <h2>Add A New Hike</h2>
+                        <h2 className="new-name"  >Add A New Hike</h2>
                         <div className="field">
-                            <label htmlFor="">Name:</label>
+                            <label className="new-name" htmlFor="">Name:</label>
                             <input className="name-new" onInput={this.handleChange} type="text" name="name" placeholder="Enter the name of the hike" required/>
                         </div>
                         <div className="field">
-                            <label htmlFor="">City:</label>
+                            <label className="new-name"  htmlFor="">City:</label>
                             <input className="city-new" onInput={this.handleChange} type="text" name="city" placeholder="Enter the hike location (City)" required/>
                         </div>
                         <div className="field">
-                            <label htmlFor="">State:</label>
+                            <label className="new-name"  htmlFor="">State:</label>
                             <input className="state-new" onInput={this.handleChange} type="text" name="state" placeholder="Enter the hike location (State)" required/>
                         </div>
                         <div className="field">
-                            <label htmlFor="">Difficulty:</label>
+                            <label className="new-name"  htmlFor="">Difficulty:</label>
                             
                             <select className="difficulty-new" name="difficulty" onChange={this.handleChange}>
                                 <option value=''>Select a difficulty level</option>
@@ -82,13 +82,12 @@ class NewHikeContainer extends React.Component {
                             </select>
                         </div>
                         <div className="field">
-                            <label htmlFor="">Image:</label>
+                            <label className="new-name"  htmlFor="">Image:</label>
                             <input className="image-new" onInput={this.handleChange} type="text" name="image" placeholder="Enter an image URL"/>
                         </div>
 
-
                         <div className="field">
-                            <label htmlFor="">Completed:</label>
+                            <label className="new-name"  htmlFor="">Completed:</label>
                             <input className="completed-new" type="checkbox" name="completed" onClick={this.toggle}/>
                         </div>
 
@@ -96,17 +95,17 @@ class NewHikeContainer extends React.Component {
                         {this.state.completed && (
                             <div>
                                 <div className="field">
-                                    <label htmlFor="">Rating:</label>
+                                    <label className="new-name"  htmlFor="">Rating:</label>
                                     <input className="rating-new" onInput={this.handleChange} type="number" name="rating" placeholder="Enter a number 1 - 5"/>
                                 </div>
                                 <div className="field">
-                                    <label htmlFor="">Review:</label>
+                                    <label className="new-name"  htmlFor="">Review:</label>
                                     <input className="review-new" onInput={this.handleChange} type="text" name="review" placeholder="Enter your review of the hike"/>
                                 </div>
                             </div>
                         )}
 
-                        <button type="submit">Add Hike</button>
+                        <button className="new-button" type="submit">Add Hike</button>
                     </form>
                 </div>
             </div>

@@ -45,8 +45,8 @@ class Profile extends Component {
                 <img className="prof-image" src={profile.image ? profile.image : DefaultHike} alt={profile.name} />
             </section>
           
-            <section className="content-wrapper">
-                <h2 className="prof-name">Name: {profile.name}</h2>
+            <section className="profile-wrapper">
+                <h2 className="prof-name"> {profile.name}</h2>
                 
                 {/* <button type="submit">Edit</button>
                 <button type="submit">Delete</button>  */}

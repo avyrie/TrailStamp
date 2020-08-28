@@ -1,20 +1,81 @@
 .hike-wrapper {
-    width: 30vw;
-    margin: 30px auto;
+    /* width: 75px; */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
+    /* padding: 25px; */
     align-items: center;
     flex: 1 0 auto;
+    
 }
+.hike-image-wrapper {
+    margin: 30px;
 
+}
 .hike-image {
-    width: 20vw;
-    padding-bottom: 30px;
+    width: 10vw;
+    background-image: url('../images/leafstampc.png');
+    opacity: 1;
 }
 .hike-name {
-    padding-bottom: 15px;;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(60, 147, 158)
+}
+strong {
+    color: rgb(33, 110, 121);
+}
+.content-wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 45px;
+    border: 2px solid rgb(60, 147, 158);
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 595px;
+    background: rgb(191, 245, 220);
+}
+.everything {
+    background: #fff;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    z-index: 8;
+}
+.toplayer {
+    z-index: 7;
+    position: absolute;
+}
+.bottomlayer {
+    z-index: 5;
+    opacity: 1;
+    position: absolute;
+}
+.alter-buttons {
+    margin-bottom: 30px;
+    margin: 0 auto;
+}
+.alter-buttons button {
+    width: 100px;
+    margin: 15px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    background: rgb(60, 147, 158);
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+.alter-buttons button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: rgb(60, 147, 158);
 }
 
 .hidden {

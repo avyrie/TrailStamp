@@ -14,19 +14,18 @@ const Nav = ({ currentUser, logout }) => {
                 {/* <NavLink className='nav-link' exact to='/'>Profile</NavLink> */}
                 {currentUser && (
                     <React.Fragment>
+                        <NavLink className='nav-link' exact to='/hikes'>Profile</NavLink>
+                        <NavLink className='nav-link' exact to='/hikes/new'>Add Hike</NavLink> 
                         <NavLink onClick={logout} className='nav-link' exact to='/'>Logout</NavLink> 
-                        <NavLink className='nav-link' exact to='/hikes/new'>Add Hike</NavLink>   
-
-                        <NavLink className='nav-link' to={`/users/${currentUser.id}`}>Profile</NavLink>
                     </React.Fragment>
                 )}
                 {!currentUser && (
                     <React.Fragment>
                         <NavLink className='nav-link' exact to='/signup'>Sign Up</NavLink>
+
                         <NavLink className='nav-link' exact to='/login'>Login</NavLink>
                     </React.Fragment>
                 )}
-                <NavLink className='nav-link' exact to='/hikes'>Hikes</NavLink>
             </div>
         </nav>
     )

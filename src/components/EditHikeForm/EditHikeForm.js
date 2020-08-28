@@ -60,25 +60,22 @@ class EditHikeForm extends React.Component {
             <div className="new-wrapper">
                 <div className="new-hike">
                     <form onSubmit={this.handleSubmit}>
-                        <h2>Edit Hike</h2>
+                        <h2 className="new-name" >Edit Hike</h2>
                         <div className="field">
-                            <label htmlFor="">Name:</label>
+                            <label className="new-name"  htmlFor="">Name:</label>
                             <input className="name-new" defaultValue={name} onChange={this.onChange} type="text" name="name"/>
                         </div>
                         <div className="field">
-                            <label htmlFor="">City:</label>
+                            <label className="new-name"  htmlFor="">City:</label>
                             <input className="city-new" defaultValue={city} onChange={this.onChange} type="text" name="city" />
                         </div>
                         <div className="field">
-                            <label htmlFor="">State:</label>
+                            <label className="new-name"  htmlFor="">State:</label>
                             <input className="state-new" defaultValue={state} onChange={this.onChange} type="text" name="state" />
                         </div>
 
                         <div className="field">
-                            <label htmlFor="">Difficulty:</label>
-
-                            {/* <input className="difficulty-new difficulty-edit" defaultValue={difficulty} onChange={this.onChange} type="text" name="difficulty" />
-                            <div className="field"> */}
+                            <label className="new-name"  htmlFor="">Difficulty:</label>
                             
                             <select className="difficulty-new difficulty-edit" name="difficulty" defaultValue={difficulty} onChange={this.onChange}>
                                 <option value=''>{difficulty}</option>
@@ -88,15 +85,14 @@ class EditHikeForm extends React.Component {
                             </select>
                         </div>
                       
-
                         <div className="field">
-                            <label htmlFor="">Image:</label>
+                            <label className="new-name"  htmlFor="">Image:</label>
                             <input className="image-new image-edit" defaultValue={image} onChange={this.onChange} type="text" name="image" />
                         </div>
 
 
                         <div className="field">
-                            <label htmlFor="">Completed:</label>
+                            <label className="new-name" htmlFor="">Completed:</label>
                             <input className="completed-new" defaultValue={completed} type="checkbox" name="completed" onClick={this.toggle}/>
                         </div>
 
@@ -104,17 +100,17 @@ class EditHikeForm extends React.Component {
                         {this.state.completed && (
                             <div>
                                 <div className="field">
-                                    <label htmlFor="">Rating:</label>
+                                    <label className="new-name" htmlFor="">Rating:</label>
                                     <input className="rating-new" defaultValue={rating} onChange={this.onChange} type="number" name="rating"  />
                                 </div>
                                 <div className="field">
-                                    <label htmlFor="">Review:</label>
+                                    <label className="new-name" htmlFor="">Review:</label>
                                     <input className="review-new" defaultValue={review} onChange={this.onChange} type="text" name="review"  />
                                 </div>
                             </div>
                         )}
 
-                        <button type="submit">Edit Hike</button>
+                        <button className="new-button" type="submit">Edit Hike</button>
                     </form>
                 </div>
             </div>
