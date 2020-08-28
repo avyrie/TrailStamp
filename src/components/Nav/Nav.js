@@ -11,7 +11,6 @@ const Nav = ({ currentUser, logout }) => {
                 <img className="stamp" src={LeafStamp} alt="leaf print" />
             </NavLink>
             <div className="nav-links">
-                {/* <NavLink className='nav-link' exact to='/'>Profile</NavLink> */}
                 {currentUser && (
                     <React.Fragment>
                         <NavLink className='nav-link' exact to='/hikes'>Profile</NavLink>

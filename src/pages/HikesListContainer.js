@@ -10,22 +10,10 @@ class HikesListContainer extends React.Component {
   componentDidMount() {
     HikeModel.getAllHikes()
       .then((result) => {
-        console.log(`This is the result: `, result);
         this.setState({hikes: result});
       })
       .catch((err) => console.log(err))
   };
-
-//   deleteHike = (hike) => {
-//       console.log(`This is a hike: `, hike)
-//     HikeModel.delete(hike).then((res) => {
-//         let hikes = this.state.hikes.filter((hike) => {
-//           return hike._id !== res.data._id;  
-//         });
-//         this.setState({hikes});
-//     })
-//     .then(() => this.props.history.push('/hikes'));
-// };
 
   render() {
     return <HikesList hikes={this.state.hikes} deleteHike={this.deleteHike} currentUser={this.props.currentUser}/>;

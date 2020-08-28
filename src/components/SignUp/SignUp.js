@@ -55,22 +55,21 @@ class SignUp extends Component {
                     <div className="form-group">
                         <label className="images" htmlFor="image">Profile Image: </label>
 
-                        {/* <input onChange={this.handleChange} type="string" id="image" name="image" value={this.state.image} placeholder="Enter an image URL"/> */}
                         <select className="image-signup" name="image" onChange={this.handleChange}>
-                                <option value=''>Select an avatar</option>
-                                <option value={Beaver}>Beaver</option>
-                                <option value={Flower}>Flower</option>
-                                <option value={Fish}>Fish</option>
-                                <option value={Fox}>Fox</option>
-                                <option value={Leaf}>Leaf</option>
-                                <option value={Lizard}>Lizard</option>
-                                <option value={Plant}>Plant</option>
-                                <option value={Snake}>Snake</option>
-                                <option value={Sun}>Sun</option>
-                                <option value={Tree}>Tree</option>
-
-                            </select>
+                          <option value=''>Select an avatar</option>
+                          <option value={Beaver}>Beaver</option>
+                          <option value={Flower}>Flower</option>
+                          <option value={Fish}>Fish</option>
+                          <option value={Fox}>Fox</option>
+                          <option value={Leaf}>Leaf</option>
+                          <option value={Lizard}>Lizard</option>
+                          <option value={Plant}>Plant</option>
+                          <option value={Snake}>Snake</option>
+                          <option value={Sun}>Sun</option>
+                          <option value={Tree}>Tree</option>
+                        </select>
                     </div>
+                    
                     <div className="form-group">
                         <label className="username" htmlFor="username">Username: </label>
                         <input onChange={this.handleChange} type="text" id="username" name="username" value={this.state.username} placeholder="Enter a username"/>

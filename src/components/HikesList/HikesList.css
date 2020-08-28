@@ -54,7 +54,9 @@
     color: rgb(13, 65, 71);
   }
   .ts {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Sacramento', cursive;
     color: rgb(25, 108, 119);
+    font-size: 60px;
+    padding-bottom: 0;
   }
   

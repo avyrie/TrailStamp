@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-// import { Link } from 'react-router-dom';
 
 function Home() {
     return(
@@ -8,11 +7,8 @@ function Home() {
             <header>
                 <div className='banner-text'>
                     <h1>May the Forest Be With You</h1>
-                    {/* <h3>“Great things are done when men and mountains meet.”</h3> */}
                     <h3>“Your focus determines your reality”</h3>
-                    {/* – Qui-Gon Jinn */}
                 </div>
-           
             </header>
 
             <div className="about">

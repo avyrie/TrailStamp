@@ -1,8 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import HikeModel from '../models/hike';
-
-import 'react-dropdown/style.css';
 import './NewHike.css'
 
 class NewHikeContainer extends React.Component {
@@ -17,26 +15,19 @@ class NewHikeContainer extends React.Component {
     review: '',
     author: this.props.currentUser,
   };
-  
 
   handleChange = (event) => {
-    console.log(`This is the event target id: `, event.target.id);
-    console.log(`This is the this.props.currentUser: `, this.props.currentUser);
     this.setState({author: this.props.currentUser})
-    
     if (event.target.value === 'on') {
         event.target.value = true;
     }
     this.setState({[event.target.name]: event.target.value})
-    // this.setState({author: this.props.currentUser})
   };
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log(`This is handleSubmit this.state: `, this.state)
     HikeModel.createHike(this.state)
       .then((result) => {
-        console.log(`This is the result from the new: `, result);
       });
     this.props.history.push('/hikes');
   }
@@ -46,12 +37,8 @@ class NewHikeContainer extends React.Component {
         completed: !prevState.completed,
     }));
   }
-
   
   render() {
-    console.log(`This.props.currentuser: `, this.props.currentUser)
-    console.log(`This.state: `, this.state)
-
     return (
         <div className="new-ev">
             <div className="new-wrapper">
@@ -70,6 +57,7 @@ class NewHikeContainer extends React.Component {
                             <label className="new-name"  htmlFor="">State:</label>
                             <input className="state-new" onInput={this.handleChange} type="text" name="state" placeholder="Enter the hike location (State)" required/>
                         </div>
+
                         <div className="field">
                             <label className="new-name"  htmlFor="">Difficulty:</label>
                             
@@ -81,6 +69,7 @@ class NewHikeContainer extends React.Component {
 
                             </select>
                         </div>
+                        
                         <div className="field">
                             <label className="new-name"  htmlFor="">Image:</label>
                             <input className="image-new" onInput={this.handleChange} type="text" name="image" placeholder="Enter an image URL"/>

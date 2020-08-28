@@ -1,10 +1,8 @@
 import React, { Component }  from 'react';
-import {withRouter} from  'react-router-dom';
+import { withRouter } from  'react-router-dom';
 import axios from 'axios';
 import Profile from '../components/Profile/Profile'
 import UserModel from '../models/user';
-
-
 
 class UserContainer extends Component{
 
@@ -13,27 +11,13 @@ class UserContainer extends Component{
     userData: [],
   }
 
-  // componentDidMount() {
-  //   this.fetchData();
-  // }
-  // fetchData = async () => {
-  //   const userData = await axios.get(`${process.env.REACT_APP_API}/users/${this.props.currentUser}`, { withCredentials: true });
-    
-  //   this.setState({
-  //     userData: userData.data.data,
-  //   })
-  //   console.log(`This is userData from user container: `, userData)
-  // };
-
   componentDidMount() {
     UserModel.getUserById(this.props.match.params.id)
     .then((result) => {
-      console.log(`This is the result of getUserById in user container: `, result, ` And this is the this.props: `, this.props);
       this.setState({user: result});
     })
     .catch((err) => console.log(`This is error from user container: `, err))
   }
-  
   
   handleUserUpdate = (event, updatedState) => {
     event.preventDefault();

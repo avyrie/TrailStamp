@@ -31,49 +31,8 @@ function HikesList(props) {
                 <h5 className="mountains">The mountains are calling... and I must go</h5>
             </div>
           </div>
-    
       </div>
     );
 }
-//     const hikesList = props.hikes.map((hikeObj) => {
-//         return(
-//             <Hike 
-//             key={hikeObj._id} 
-//             hike={hikeObj} 
-//             deleteHike={props.deleteHike}
-//             list={true}
-//             updateHike={props.updateHike}
-//             visible={true}
-//             />
-//         ) 
-//     }
-// );
-    // if (props.currentUser != props.hikes.author) {
-    //     console.log(`THIS DOES NOT MATCH CURRENT USER: `, props.hikes.name)
-    //     return(
-    //         <></>
-    //     ) 
-    // } else {
-    //     return(
-    //         <Hike 
-    //         key={hikeObj._id} 
-    //         hike={hikeObj} 
-    //         deleteHike={props.deleteHike}
-    //         list={true}
-    //         updateHike={props.updateHike}
-    //         visible={true}
-    //         />
-    //     ) 
-    // }
-
-    // for (let i = 0; i < props.hikes.length; i++) {
-    //     if (props.currentUser != props.hikes[i].author) {
-    //         // let hidden = 'hidden'
-    //         console.log(`THIS DOES NOT MATCH CURRENT USER: `, props.hikes[i].name)
-    //     } else {
-    //         // let hidden = ''
-    //     }
-    // }
-
 
 export default HikesList;

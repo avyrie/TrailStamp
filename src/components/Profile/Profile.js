@@ -40,24 +40,18 @@ class Profile extends Component {
     const profile = this.state.profile
     return (
         <div className="prof-wrapper">
-        
             <section className="image-wrapper">
                 <img className="prof-image" src={profile.image ? profile.image : DefaultHike} alt={profile.name} />
             </section>
-          
             <section className="profile-wrapper">
                 <h2 className="prof-name"> {profile.name}</h2>
                 
                 {/* <button type="submit">Edit</button>
                 <button type="submit">Delete</button>  */}
             </section>
-
-            {/* <HikesList /> */}
-
         </div>
     )
     }
 }
-
 
 export default Profile;

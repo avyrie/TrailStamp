@@ -12,40 +12,27 @@ import UserContainer from '../pages/UserContainer';
 
 export default ({ currentUser, setCurrentUser, logout }) => (
     <Switch>
-        <Route exact path='/' component={Home}/>
-
+        {/* User Profile Page
         <Route path='/users/:id' render={() => 
-            <UserContainer setCurrentUser={setCurrentUser} currentUser={currentUser} logout={logout}/>}/>
-            
+        <UserContainer setCurrentUser={setCurrentUser} currentUser={currentUser} logout={logout}/>}/> */}
+       
+        {/* Home Page */}
+        <Route exact path='/' component={Home}/>
+        {/* Signup Page */}
         <Route path='/signup' component={SignUp}/>
-
+        {/* Login Page */}
         <Route path='/login' render={() =>
             <Login setCurrentUser={setCurrentUser}/>}
             />
-
-        {/* <Route exact path='/hikes' component={HikesListContainer}/> */}
+        {/* Profile Page */}
         <Route exact path='/hikes' render = {props => <HikesListContainer {...props} currentUser={currentUser} />}  />
-
+        {/* Add New Hike Page */}
         <Route path='/hikes/new' render={() => 
             <NewHikeContainer currentUser={currentUser}/>} 
             />
-
+        {/* Hike Edit Page */}
         <Route path='/hikes/:id/edit' component={EditHikeForm} />
-
+        {/* Hike Show Page */}
         <Route path='/hikes/:id' render = {props => <HikeContainer {...props} currentUser={currentUser} />}  />
-        {/* <Route path='/hikes/:id' component={HikeContainer} /> */}
-        {/* <Route path='/hikes/:id' render={() => 
-            <HikeContainer currentUser={currentUser}/>} 
-            /> */}
-        
-            
-    </Switch>
-        
+    </Switch>       
 )
-
-{/* <Route path='/hikes/new' render={() => 
-currentUser 
-? <NewHikeContainer/> 
-: <Redirect to='/login'/>  
-}/>
-</Switch> */}
