@@ -10,8 +10,8 @@
     
 }
 .hike-image-wrapper {
-    margin: 30px;
-
+    width: 20vw;
+    margin: 10px;
 }
 .hike-image {
     width: 10vw;
@@ -35,7 +35,7 @@ strong {
     display: flex;
     flex-direction: column;
     width: 70vw;
-    max-width: 595px;
+    max-width: 650px;
     background: rgb(191, 245, 220);
 }
 .everything {
@@ -80,4 +80,9 @@ strong {
 
 .hidden {
     display: none;
+}
+.hike-show-image {
+    width: 45vw;
+    margin: 0 auto;
+    padding: 10px;
 }
