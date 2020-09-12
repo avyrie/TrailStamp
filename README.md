@@ -57,7 +57,7 @@ A user may add a hike they would either like to do or have already completed. If
 
 ## Attributions and Acknowledgements
 
-### Special thanks to Adonis Martin, Derek Oshita, Kenny Bushman, Michael Petty, Nate Daniels, Yulia Tsernant, and Zach Milan.
+### Special thanks to Adonis Martin, Derek Oshita, Kaila Hobbs, Kenny Bushman, Michael Petty, Nate Daniels, Yulia Tsernant, and Zach Milan.
 
 ### Images:
 

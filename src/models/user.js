@@ -1,5 +1,7 @@
 import axios from 'axios';
-const url = `http://localhost:4000/api/users`
+// const url = `http://localhost:4000/api/users`
+const url = `${process.env.REACT_APP_API}/users`
+
 const token = localStorage.getItem('token')
 
 class UserModel {

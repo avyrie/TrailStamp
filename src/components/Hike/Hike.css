@@ -85,4 +85,5 @@ strong {
     width: 45vw;
     margin: 0 auto;
     padding: 10px;
+    max-width: 655px;
 }
