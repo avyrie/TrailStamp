@@ -33,7 +33,7 @@ class SignUp extends Component {
         event.preventDefault();
         axios.post(`${process.env.REACT_APP_API}/auth/signup`, this.state)
           .then((res) => {
-            console.log(res);
+            console.log(`This is res in handle submit: `, res);
             this.props.setCurrentUser(res.data.token);
             this.props.history.push('/');
           })
