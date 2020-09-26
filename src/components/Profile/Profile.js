@@ -5,7 +5,7 @@ import UserContainer from '../../pages/UserContainer';
 import UserModel from "../../models/user"
 import HikesList from '../HikesList/HikesList';
 import './Profile.css';
-const url = `http://localhost:4000/api/users`
+const url = `${process.env.REACT_APP_API}/users`
 
 
 
