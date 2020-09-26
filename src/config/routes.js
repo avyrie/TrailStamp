@@ -19,7 +19,10 @@ export default ({ currentUser, setCurrentUser, logout }) => (
         {/* Home Page */}
         <Route exact path='/' component={Home}/>
         {/* Signup Page */}
-        <Route path='/signup' component={SignUp}/>
+        {/* <Route path='/signup' component={SignUp}/> */}
+        <Route path='/signup' render={() => 
+            <Signup setCurrentUser={setCurrentUser}/>}
+            />
         {/* Login Page */}
         <Route path='/login' render={() =>
             <Login setCurrentUser={setCurrentUser}/>}
